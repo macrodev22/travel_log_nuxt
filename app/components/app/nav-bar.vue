@@ -7,6 +7,7 @@
     </div>
 
     <div class="navbar-end">
+      <AppThemeToggle />
       <a class="btn">Sign In <Icon name="tabler:brand-github" /></a>
     </div>
   </div>
