@@ -1,3 +1,4 @@
+import { user } from "./auth-schema";
 import { location } from "./location";
 import { int, real, sqliteTable, text } from "drizzle-orm/sqlite-core";
 
@@ -10,6 +11,7 @@ export const locationLog = sqliteTable("location_log", {
   lng: real().notNull(),
   startedAt: int().notNull(),
   endedAtd: int().notNull(),
+  userId: text().notNull().references(() => user.id),
   createdAt: int().notNull().$default(() => Date.now()),
   updatedAt: int().notNull().$default(() => Date.now()).$onUpdate(() => Date.now()),
 });
