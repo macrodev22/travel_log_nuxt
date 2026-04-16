@@ -6,6 +6,7 @@ export default defineConfig({
   schema: "./lib/db/schema/index.ts",
   dialect: "turso",
   dbCredentials: {
-    url: env.DB_FILE_NAME,
+    url: env.TURSO_DB_URL,
   },
+  casing: "snake_case",
 });

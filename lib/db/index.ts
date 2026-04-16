@@ -4,9 +4,10 @@ import * as schema from "./schema";
 
 const db = drizzle({
   connection: {
-    path: env.DB_FILE_NAME,
+    path: env.TURSO_DB_URL,
   },
   schema,
+  casing: "snake_case",
 });
 
 export default db;
