@@ -1,24 +1,20 @@
 <script setup lang="ts">
-import { createAuthClient } from "better-auth/client";
+import { useAuthStore } from "~/stores/auth";
 
 const { accent } = defineProps({ accent: { type: Boolean, default: false } });
 
-const authClient = createAuthClient();
-
-async function signIn() {
-  await authClient.signIn.social({
-    provider: "github",
-    callbackURL: "/dashboard",
-  });
-}
+const authStore = useAuthStore();
 </script>
 
 <template>
   <button
     class="btn"
     :class="{ 'btn-accent': accent }"
-    @click="signIn"
+    :disabled="authStore.loading"
+    @click="authStore.signIn"
   >
-    Sign In with Github <Icon name="tabler:brand-github" />
+    Sign In with Github
+    <span v-if="authStore.loading" class="loading loading-spinner loading-md" />
+    <Icon v-else name="tabler:brand-github" />
   </button>
 </template>
