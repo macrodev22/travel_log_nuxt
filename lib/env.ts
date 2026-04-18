@@ -6,6 +6,8 @@ const EnvSchema = z.object({
   NODE_ENV: z.string(),
   TURSO_DB_URL: z.string(),
   BETTER_AUTH_SECRET: z.string(),
+  AUTH_GITHUB_CLIENT_ID: z.string(),
+  AUTH_GITHUB_CLIENT_SECRET: z.string(),
 });
 
 export type EnvSchema = z.infer<typeof EnvSchema>;
