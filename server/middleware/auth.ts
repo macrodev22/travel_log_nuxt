@@ -7,7 +7,7 @@ export default defineEventHandler(async (event) => {
     });
 
     if (!session) {
-      await sendRedirect(event, "/");
+      await sendRedirect(event, "/", 302);
     }
   }
 });
