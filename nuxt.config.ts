@@ -20,6 +20,9 @@ export default defineNuxtConfig({
     plugins: [
       tailwindcss(),
     ],
+    optimizeDeps: {
+      include: ["better-auth/client"],
+    },
   },
   colorMode: {
     dataValue: "theme",
