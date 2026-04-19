@@ -38,6 +38,9 @@ importers:
       nuxt:
         specifier: ^4.4.2
         version: 4.4.2(e3a271aed90327b7a1f617f515488c30)
+      pinia:
+        specifier: ^3.0.4
+        version: 3.0.4(typescript@6.0.2)(vue@3.5.32(typescript@6.0.2))
       tailwindcss:
         specifier: ^4.2.2
         version: 4.2.2
@@ -902,8 +905,8 @@ packages:
   '@iconify-json/tabler@1.2.33':
     resolution: {integrity: sha512-q9nUQfE/cjIrGh5bAKHTphitAZpT0kX9SxDgZo3Sx8ofeDTsaHVdRwrn+CfKiJ5vQ1b1btqVwizXzIgz9KEPjA==}
 
-  '@iconify/collections@1.0.673':
-    resolution: {integrity: sha512-xTnmPhEvJLiMVm2ABjYk8t+dg8TgdF7h0RNOXIq0GBsvs1pM5gcVWV6OxaG+7Ocbo05UXGFOxebwonO48fXQmw==}
+  '@iconify/collections@1.0.674':
+    resolution: {integrity: sha512-YLEpD2DufdlvG6keWnfyBL+FrIOxm2+2aypAVns9vZCBMvWSU4dn/gQEz9CV7k5QPM1uE9OQqfHAaBMR+kf1kg==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -6624,7 +6627,7 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
-  '@iconify/collections@1.0.673':
+  '@iconify/collections@1.0.674':
     dependencies:
       '@iconify/types': 2.0.0
 
@@ -6973,7 +6976,7 @@ snapshots:
 
   '@nuxt/icon@2.2.1(magicast@0.5.2)(vite@7.3.2(@types/node@25.6.0)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.46.1)(yaml@2.8.3))(vue@3.5.32(typescript@6.0.2))':
     dependencies:
-      '@iconify/collections': 1.0.673
+      '@iconify/collections': 1.0.674
       '@iconify/types': 2.0.0
       '@iconify/utils': 3.1.0
       '@iconify/vue': 5.0.0(vue@3.5.32(typescript@6.0.2))
@@ -7876,8 +7879,8 @@ snapshots:
 
   '@typescript-eslint/project-service@8.57.2(typescript@6.0.2)':
     dependencies:
-      '@typescript-eslint/tsconfig-utils': 8.57.2(typescript@6.0.2)
-      '@typescript-eslint/types': 8.57.2
+      '@typescript-eslint/tsconfig-utils': 8.58.2(typescript@6.0.2)
+      '@typescript-eslint/types': 8.58.2
       debug: 4.4.3
       typescript: 6.0.2
     transitivePeerDependencies:
