@@ -21,7 +21,7 @@ export default defineNuxtConfig({
       tailwindcss(),
     ],
     optimizeDeps: {
-      include: ["better-auth/client"],
+      include: ["better-auth/vue"],
     },
   },
   colorMode: {
