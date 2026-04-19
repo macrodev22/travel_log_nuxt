@@ -20,6 +20,7 @@ export default defineNuxtConfig({
     plugins: [
       tailwindcss(),
     ],
+    optimizeDeps: { include: ["better-auth/vue"] },
   },
   colorMode: {
     dataValue: "theme",
